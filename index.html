@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- Decorative Shapes -->
+    <div class="decorative-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">SUBHANKAR</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>
+                    Hi, I'm <br><span class="gradient-text">Subhankar Das</span>
+                    <br>
+                    <span class="typing-text" id="typingText"></span>
+                </h1>
+
+                <p class="hero-description">
+                    Transforming ideas into exceptional digital experiences. Specializing in cutting-edge web design,
+                    interactive UI/UX, and innovative development solutions that push boundaries.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="95">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-card" data-aos="fade-left">
+                <div class="profile-card">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-border"></div>
+                        <div class="profile-image">
+                            <img src="assets/img/profile/PHOTO.jpg" alt="Profile Photo"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Subhankar Das</h3>
+                        <p>Creative Developer</p>
+                        <div class="profile-badges">
+                            <span class="badge">Available for Work</span>
+                            <span class="badge">Remote</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Expertise & Skills</h2>
+                <p class="section-subtitle">
+                    Mastering the art of digital creation with cutting-edge technologies and modern frameworks
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Crafting intuitive and visually stunning interfaces that captivate users and enhance experiences.
+                    </p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="98"></div>
+                        <span class="skill-percentage">98%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive, performant web applications with modern frameworks and best practices.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Engineering</h3>
+                    <p>Developing robust server-side solutions, RESTful APIs, and scalable architectures.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Creating native and cross-platform mobile applications with stunning design and performance.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Motion Design</h3>
+                    <p>Bringing interfaces to life with captivating animations and smooth micro-interactions.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Brand Identity</h3>
+                    <p>Designing memorable brand experiences that resonate and create lasting impressions.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="94"></div>
+                        <span class="skill-percentage">94%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of my best work, pushing boundaries and creating exceptional solutions
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/img/project/ecommerce.jpg" alt="E-Commerce Project" class="project-thumb">
+
+                        <div class="project-overlay">
+                            <a href="https://github.com/YourRepoLink" class="project-btn" target="_blank">
+                                View Project
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>FinTech Dashboard</h3>
+                        <p>Comprehensive financial analytics platform with real-time data visualization and AI-powered
+                            insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/img/project/ecommerce.jpg" alt="E-Commerce Project" class="project-thumb">
+                        <div class="project-overlay">
+                            <a href="https://github.com/YourRepoLink" class="project-btn" target="_blank">
+                                View Project
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>Luxury E-Commerce</h3>
+                        <p>Premium shopping experience with 3D product previews, AR integration, and seamless checkout.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Three.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">AR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/img/project/ecommerce.jpg" alt="E-Commerce Project" class="project-thumb">
+                        <div class="project-overlay">
+                            <a href="https://github.com/YourRepoLink" class="project-btn" target="_blank">
+                                View Project
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="project-content">
+                        <h3>Music Streaming App</h3>
+                        <p>Modern music platform with personalized playlists, social features, and high-quality audio.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">WebAudio</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="assets/img/project/ecommerce.jpg" alt="E-Commerce Project" class="project-thumb">
+                        <div class="project-overlay">
+                            <a href="https://github.com/YourRepoLink" class="project-btn" target="_blank">
+                                View Project
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>HealthTech Platform</h3>
+                        <p>Revolutionary telemedicine solution connecting patients with healthcare providers securely.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">HIPAA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="assets/img/project/ecommerce.jpg" alt="E-Commerce Project" class="project-thumb">
+                        <div class="project-overlay">
+                            <a href="https://github.com/YourRepoLink" class="project-btn" target="_blank">
+                                View Project
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="project-content">
+                        <h3>EdTech Learning Hub</h3>
+                        <p>Interactive learning platform with gamification, live classes, and progress tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="assets/img/project/ecommerce.jpg" alt="E-Commerce Project" class="project-thumb">
+                        <div class="project-overlay">
+                            <a href="https://github.com/YourRepoLink" class="project-btn" target="_blank">
+                                View Project
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="project-content">
+
+                        <h3>Travel Booking System</h3>
+                        <p>Complete travel solution with AI recommendations, trip planning, and booking management.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Maps API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Career Path</span>
+                <h2 class="section-title">Experience Journey</h2>
+                <p class="section-subtitle">
+                    A timeline of growth, innovation, and remarkable achievements
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023 - Present</span>
+                        <h3>Senior Design Engineer</h3>
+                        <p>Leading design and development initiatives for cutting-edge digital products at a top tech
+                            company. Managing cross-functional teams and driving innovation.</p>
+                        <div class="timeline-tags">
+                            <span>Leadership</span>
+                            <span>Product Design</span>
+                            <span>Team Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020 - 2023</span>
+                        <h3>Full Stack Developer</h3>
+                        <p>Architected and delivered multiple high-impact web applications for global clients.
+                            Specialized in modern JavaScript frameworks and cloud technologies.</p>
+                        <div class="timeline-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2018 - 2020</span>
+                        <h3>UI/UX Designer</h3>
+                        <p>Designed intuitive interfaces for mobile and web applications. Conducted user research and
+                            created design systems for multiple brands.</p>
+                        <div class="timeline-tags">
+                            <span>Figma</span>
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2016 - 2018</span>
+                        <h3>Junior Developer</h3>
+                        <p>Started my journey in web development, mastering fundamentals and building responsive
+                            websites. Collaborated with senior developers on various projects.</p>
+                        <div class="timeline-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="section-subtitle">
+                    Have a project in mind? Let's bring your vision to life with exceptional design and development
+                </p>
+            </div>
+
+
+
+            <div class="contact-form-wrapper" data-aos="fade-left">
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ab666d36-c3c4-494a-b528-0e0b1d110575">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="hidden" name="replyto" value="email">
+
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+                        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-palette"></i> Web Design</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Development</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i> UI/UX Design</a></li>
+                        <li><a href="#"><i class="fas fa-lightbulb"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=subhankardas0724@gmail.com"><i
+                                    class="fas fa-envelope"></i>
+                                Email</a></li>
+                        <li><a href="https://t.me/subhankar0724"><i class="fab fa-telegram"></i> Telegram</a></li>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i>India</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-section">
+
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2025 SUBHANKAR Portfolio. Crafted with passion and code ⚡</p>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
