@@ -1,4 +1,4 @@
-/* ===== RESET & ROOT VARIABLES ===== */
+ /* ===== RESET & ROOT VARIABLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -1400,11 +1400,7 @@ body::before {
     align-items: center;
 }
 
-.footer-content {
-    text-align: center;
-    gap: 3rem;
-    /* equally spaced */
-}
+
 
 .social-links {
     margin-bottom: 30px;
@@ -1541,4 +1537,207 @@ body::before {
     .section-title {
         font-size: 2rem;
     }
+
+    /* MOBILE FIX – hero image + text overlapping solve */
+@media (max-width: 768px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image-wrapper {
+        width: 220px !important;
+        height: 260px !important;
+        margin: 0 auto;
+    }
+
+    .profile-card {
+        padding: 1.5rem !important;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .profile-image-wrapper {
+        width: 180px !important;
+        height: 220px !important;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-description {
+        font-size: 1rem !important;
+    }
+}
+/* ================================
+    COMPLETE MOBILE FIX PACKAGE
+   ================================ */
+   
+/* --- Global container fix --- */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem !important;
+    }
+}
+
+/* =======================
+   1) PROJECTS SECTION FIX
+   ======================= */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .project-card {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .project-image {
+        height: 200px !important;
+    }
+}
+
+/* =======================
+   2) TIMELINE SECTION FIX
+   ======================= */
+@media (max-width: 768px) {
+
+    .timeline::before {
+        left: 15px !important;
+    }
+
+    .timeline-item {
+        flex-direction: row !important;
+        margin-left: 0 !important;
+    }
+
+    .timeline-content {
+        width: calc(100% - 40px) !important;
+        margin-left: 40px !important;
+        padding: 1.5rem !important;
+    }
+
+    .timeline-dot {
+        left: 15px !important;
+    }
+}
+
+/* =======================
+   3) CONTACT FORM FIX
+   ======================= */
+@media (max-width: 768px) {
+
+    .contact-form-wrapper {
+        padding: 1.2rem !important;
+        width: 100% !important;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* =======================
+   4) FOOTER FIX
+   ======================= */
+@media (max-width: 768px) {
+
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        text-align: center !important;
+    }
+
+    .footer-section {
+        align-items: center !important;
+    }
+
+    .social-links {
+        justify-content: center !important;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    
+    .project-image {
+        height: 170px !important;
+    }
+
+    .timeline-content {
+        padding: 1.2rem !important;
+    }
+}
+/* Skill section mobile fix */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .skill-card {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
+/* Footer desktop/tablet layout fix */
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+/* Footer mobile fix */
+@media (max-width: 767px) {
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+}
+/* Skill section mobile fix */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .skill-card {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
+.footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@media (max-width: 768px) {
+    .profile-image-wrapper {
+        margin-bottom: 1.2rem !important;  /* Increase gap under photo */
+    }
+
+    .profile-info h3 {
+        margin-top: 0.8rem !important;  /* Extra breathing space above name */
+    }
+}
+
 }
