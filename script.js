@@ -1,4 +1,4 @@
-// ===== INITIALIZATION =====
+//INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', function () {
     initNavigation();
     initDarkMode();
