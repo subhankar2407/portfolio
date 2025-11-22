@@ -1741,3 +1741,22 @@ body::before {
 }
 
 }
+/* CONTACT FORM FULL RESPONSIVE FIX */
+@media (max-width: 768px) {
+    .contact-form-wrapper {
+        padding: 1.2rem !important;
+        width: 100% !important;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100% !important;   /* 🔥 IMPORTANT FIX */
+        font-size: 0.9rem !important;
+    }
+}
+
